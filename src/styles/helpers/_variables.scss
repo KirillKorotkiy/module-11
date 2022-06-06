@@ -1,0 +1,52 @@
+// font family
+
+$ff_r:"Roboto", sans-serif;
+$ff_m:"Montserrat", sans-serif;
+$ff_ks:"Kaushan Script", sans-serif;
+$ff_ks_curv:"Kaushan Script", cursive;
+
+// color
+$colors: (
+    color-1:#515151,
+    color-2:#ffffff,
+    color-3:#fce38a,
+    color-4:#2ed9b9,
+    color-5:#999999,
+    color-6:#000000,
+    color-7:#f38181,
+    color-8:#f9c0c0,
+    color-9:#e7e7e7,
+    );
+
+// font-size
+
+$primary-fs:18px;
+$page-nav-logo-fs:30px;
+$greeting-item-fs:150px;
+$greeting-text-fs:72px;
+$cap-title-fs:24px;
+$cap-item-fs:30px;
+$feat-item-text-fs:15px;
+$feat-item-titile-fs:14px;
+
+// line-height
+
+$line-height: (
+    primary-lh:32px,
+    lh-140:140px,
+    lh_24:24px,
+);
+
+// bck-gradient
+
+$bck-gradient:linear-gradient(rgba(239,137,138,0.7), 
+rgba(244,217,136,0.7));
+$bck-gradient_2:linear-gradient(rgba(239,137,138,0.0), rgba(244,217,136,0.0));
+
+// font-wieght
+
+$font-weight:(
+    fw_1:300,
+    fw_2:400,
+    fw_3:700,
+);

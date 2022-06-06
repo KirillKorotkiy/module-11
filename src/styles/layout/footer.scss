@@ -1,0 +1,47 @@
+.footer{
+    @include display(flex, space-between);
+    height: 65px;
+    align-items: center;
+    border-top: solid;
+    border-width: 1px;
+    border-top-color: map-get($colors , color-9 );
+
+    &__link{
+    color: map-get($colors , color-8 );
+    text-decoration: none;
+    }
+}
+
+.footer-form__item{
+    display: flex;
+    height: 40px;
+}
+
+.footer-form__email{
+    border-color: map-get($colors , color-9 );
+    border-width: 1px;
+    font-size: $feat-item-text-fs;
+    line-height: 21px;
+    font-style: italic;
+    font-weight: map-get($font-weight , fw_1 );
+}
+
+.footer-form__button{
+    @include display(flex, center);
+    @include font-settings($ff_m, $feat-item-titile-fs)
+    width: 150px;
+    background-color:map-get($colors , color-4 );
+    border:none;
+    color: map-get($colors , color-2 );
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: map-get($font-weight , fw_3 );
+    cursor: pointer;
+}
+
+.icon{
+    display: inline-block;
+    fill: map-get($colors , color-2 );
+    width: 20px;
+    height: 32px;
+}
