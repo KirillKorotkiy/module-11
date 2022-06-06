@@ -1,62 +1,75 @@
-.bacground-header{
-    @include bck-img ($path: '../img/eagle.jpg');
-    height: 200px;
-    margin-bottom: 50px;
+.bacground-header {
+  @include bck-img($path: '../img/eagle.jpg');
+  height: 700px;
+  margin-bottom: 50px;
 
-    @media(min-resolution:192dpi), (min-resolution:2dppx){
-            @include bck-img ($path: '../img/eagle@2x.jpg');
-    }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @include bck-img($path: '../img/eagle@2x.jpg');
+  }
 }
 
-.link{
-    @extend %link-style;
+.link {
+  @extend %link-style;
 
-    &::after{
-        content:"";
-        position: absolute;
-        width: 50px;
-        height: 3px;
-        background-color: map-get($colors , color-3 );
-        opacity: 0;
-        transition-property:opacity;
-        transition-duration: 200ms;
-    }
-    
-    &:hover::after{
-        opacity: 1;
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: map-get($colors, color-3);
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 200ms;
+  }
 
-    &:hover{
-        color:map-get($colors , color-3 );
-    }
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover {
+    color: map-get($colors, color-3);
+  }
 }
 
-.page-nav{
-    @include display(flex,  space-between)
-    padding-top: 40px;
-    padding-bottom: 115px;
+.page-nav {
+  @include display(flex, space-between);
+  padding-top: 40px;
+  padding-bottom: 115px;
 
-    &__logo{
-        font-size: $page-nav-logo-fs;
-        line-height: auto;}
+  &__logo {
+    font-size: $page-nav-logo-fs;
+    line-height: auto;
+  }
 
-    &__logo-item{
-        text-decoration: none;
-        color: map-get($colors , color-2 );
-    }
-    }
+  &__logo-item {
+    text-decoration: none;
+    color: map-get($colors, color-2);
+  }
+}
 
-.site-navigation{
-    display: flex;
+.site-navigation {
+  display: flex;
 
-    & li:not(:last-child){
-        margin-right: 40px;
-    }
+  & li:not(:last-child) {
+    margin-right: 40px;
+  }
 
-    &__link{
-        @include display(flex, center)
-        align-items: flex-end;
-        transition-property:color;
-        transition-duration: 200ms;
-    }
+  &__link {
+    @include display(flex, center);
+    align-items: flex-end;
+    transition-property: color;
+    transition-duration: 200ms;
+  }
+}
+
+.icon {
+  display: inline-block;
+  fill: map-get($colors, color-2);
+  width: 20px;
+  height: 32px;
+  cursor: pointer;
+
+  &:hover {
+    fill: map-get($colors, color-3);
+  }
 }
